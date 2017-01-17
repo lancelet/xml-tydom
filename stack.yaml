@@ -1,0 +1,7 @@
+resolver: lts-7.16
+packages:
+- xml-tydom-core
+- xml-tydom-conduit
+extra-deps: []
+flags: {}
+extra-package-dbs: []

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<emails>
+  <email classified="xfiles">
+    <from>mulder@fbi.gov</from>
+    <to>scully@fbi.gov</to>
+    <subject>Trenchcoat</subject>
+    <attachment file="yes"/>
+    <content>Hi Scully, does this trenchcoat make me look fat?</content>
+  </email>
+  <email classified="none">
+    <from>scully@fbi.gov</from>
+    <to>mulder@fbi.gov</to>
+    <subject>Re: Trenchcoat</subject>
+    <content>Yes, yes it does. Fatty.</content>
+  </email>
+</emails>

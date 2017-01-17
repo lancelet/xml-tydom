@@ -1,0 +1,32 @@
+# use the container-based infrastructure
+sudo: false
+
+# no language choice (self-provided build tools)
+language: generic
+
+# enable caching
+cache:
+  directories:
+    - $HOME/.stack
+
+# ensure necessary system libraries (libgmp) are present
+addons:
+  apt:
+    packages:
+      - libgmp-dev
+
+# install stack
+before_install:
+  - mkdir -p ~/.local/bin
+  - export PATH=$HOME/.local/bin:$PATH
+  - travis_retry curl -L https://www.stackage.org/stack/linux-x86_64 | tar xz --wildcards --strip-components=1 -C ~/.local/bin '*/stack'
+
+# build dependencies
+install:
+  - stack --no-terminal --install-ghc test --only-dependencies
+
+# build the package
+#  TODO: tests and docs
+#   stack --no-terminal test --haddock --no-haddock-deps
+script:
+  - stack --no-terminal build

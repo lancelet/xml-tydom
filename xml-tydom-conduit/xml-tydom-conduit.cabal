@@ -1,0 +1,52 @@
+name:                xml-tydom-conduit
+version:             0.1.0.0
+synopsis:            Typed XML encoding for an xml-conduit backend.
+description:         Please see README.md
+homepage:            https://github.com/lancelet/xml-tydom
+license:             BSD3
+license-file:        LICENSE
+author:              Jonathan Merritt
+maintainer:          j.s.merritt@gmail.com
+copyright:           2017 Jonathan Merritt
+category:            Text, Web, XML
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+  ghc-options:         -Wall -Werror
+  exposed-modules:     Text.XML.TyDom.Conduit
+                     , Text.XML.TyDom.Conduit.TH
+  build-depends:       base >= 4.7 && < 5
+                     , containers
+                     , template-haskell
+                     , text
+                     , time
+                     , xml-conduit
+                     , xml-tydom-core
+
+test-suite xml-tydom-conduit-test
+  type:                exitcode-stdio-1.0
+  hs-source-dirs:      test
+  main-is:             Spec.hs
+  default-language:    Haskell2010
+  ghc-options:         -Wall -Werror -O2 -threaded -rtsopts -with-rtsopts=-N -fprint-potential-instances
+  other-modules:       RoundTrips.Basics
+                     , XMLSchemas.PurchaseOrder.Spec
+                     , XMLSchemas.PurchaseOrder.Types
+  build-depends:       base >= 4.7 && < 5
+                     , QuickCheck
+                     , quickcheck-instances
+                     , tasty
+                     , tasty-hunit
+                     , tasty-quickcheck
+                     , text
+                     , time
+                     , xml-conduit
+                     , xml-tydom-conduit
+
+source-repository head
+  type:     git
+  location: https://github.com/lancelet/xml-tydom
