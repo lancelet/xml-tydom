@@ -1,4 +1,3 @@
-{-# OPTIONS_GHC -Wwarn #-}
 {-# LANGUAGE TemplateHaskell #-}
 
 module Text.XML.TyDom.Conduit.TH

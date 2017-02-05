@@ -1,4 +1,3 @@
-{-# OPTIONS_GHC -Wwarn #-}
 {-# LANGUAGE OverloadedStrings #-}
 
 module XMLSchemas.PurchaseOrder.Spec (tests) where

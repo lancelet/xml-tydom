@@ -1,5 +1,3 @@
--- {-# OPTIONS_GHC -Wwarn #-}
-
 {-|
 Module      : Text.XML.TyDom.Core.Generics
 Description : Generic implementations of XML reading and writing.

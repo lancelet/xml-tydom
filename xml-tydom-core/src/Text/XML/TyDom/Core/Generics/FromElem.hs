@@ -1,4 +1,3 @@
--- {-# OPTIONS_GHC -Wwarn #-}  -- reduce errors to warnings
 {-# LANGUAGE DataKinds             #-}
 {-# LANGUAGE FlexibleContexts      #-}
 {-# LANGUAGE FlexibleInstances     #-}

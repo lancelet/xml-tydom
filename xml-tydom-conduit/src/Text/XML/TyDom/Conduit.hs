@@ -1,4 +1,3 @@
--- {-# OPTIONS_GHC -Wwarn #-}
 {-# OPTIONS_GHC -fno-warn-orphans #-}
 {-# LANGUAGE DeriveFunctor              #-}
 {-# LANGUAGE FlexibleContexts           #-}

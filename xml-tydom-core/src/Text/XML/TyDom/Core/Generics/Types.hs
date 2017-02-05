@@ -1,5 +1,3 @@
--- {-# OPTIONS_GHC -Wwarn #-}  -- reduce errors to warnings
-
 {-|
 Module      : Text.XML.TyDom.Core.Generics.Types
 Description : Types that configure generic XML instances.

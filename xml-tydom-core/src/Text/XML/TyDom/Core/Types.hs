@@ -1,4 +1,3 @@
--- {-# OPTIONS_GHC -Wwarn #-}
 {-# LANGUAGE DeriveFunctor              #-}
 {-# LANGUAGE FlexibleInstances          #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}

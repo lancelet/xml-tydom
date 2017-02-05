@@ -1,4 +1,3 @@
--- {-# OPTIONS_GHC -Wwarn #-}
 {-# OPTIONS_GHC -fno-warn-unused-top-binds #-}
 {-# LANGUAGE DeriveGeneric              #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}

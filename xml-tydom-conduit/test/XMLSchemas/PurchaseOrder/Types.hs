@@ -1,4 +1,3 @@
-{-# OPTIONS_GHC -Wwarn #-}
 {-# LANGUAGE DeriveGeneric              #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
 {-# LANGUAGE OverloadedStrings          #-}
