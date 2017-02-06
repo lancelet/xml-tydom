@@ -49,6 +49,7 @@ module Text.XML.TyDom.Core.Types
     ) where
 
 import           Control.Applicative (Alternative, empty, (<|>))
+import           Data.String         (IsString)
 import           Data.Text           (Text)
 import qualified Data.Text           as Text (concat)
 import           Test.QuickCheck     (Arbitrary)
@@ -99,14 +100,16 @@ class Conv p q where
 --   attribute. The name of the attribute is specified by the name of the record
 --   selector, while the value is the textual representation of the value of
 --   type @z@.
-newtype Attr z = Attr { unAttr :: z } deriving (Eq, Show, Arbitrary)
+newtype Attr z = Attr { unAttr :: z }
+    deriving (Eq, Show, Arbitrary, Num, IsString)
 
 -- | Child (containing only text).
 --
 --   Specifies that a record field of type @Child z@ should become a child
 --   element of the current element, containing the textual representation of
 --   the value of type @z@.
-newtype Child z = Child { unChild :: z } deriving (Eq, Show, Arbitrary)
+newtype Child z = Child { unChild :: z }
+    deriving (Eq, Show, Arbitrary, Num, IsString)
 
 -- | Content node.
 --
