@@ -1,5 +1,7 @@
 # <img src="https://rawgit.com/lancelet/xml-tydom/master/xml-tydom-logo.svg" width="100"/><br/>xml-tydom-conduit
 
+[![Hackage](https://img.shields.io/hackage/v/xml-tydom-conduit.svg)]
+
 A typed XML encoding / decoding front-end for [xml-conduit][1].
 
 For an introduction, please see the guide provided in

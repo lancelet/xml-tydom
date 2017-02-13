@@ -1,5 +1,7 @@
 # <img src="https://rawgit.com/lancelet/xml-tydom/master/xml-tydom-logo.svg" width="100"/><br/>xml-tydom-core
 
+[![Hackage](https://img.shields.io/hackage/v/xml-tydom-core.svg)]
+
 __End users please note:__ End-users probably don't need to be concerned with
 this library. Instead, end-users probably want the library written for a
 specific back-end. Currently, that is limited to [xml-tydom-conduit][1].
