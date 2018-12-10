@@ -1,4 +1,4 @@
-# <img src="https://rawgit.com/lancelet/xml-tydom/master/xml-tydom-logo.svg" width="100"/><br/>xml-tydom-conduit
+# <img src="https://cdn.jsdelivr.net/gh/lancelet/xml-tydom@master/xml-tydom-logo.svg" width="100"/><br/>xml-tydom-conduit
 
 [![Hackage](https://img.shields.io/hackage/v/xml-tydom-conduit.svg)](https://hackage.haskell.org/package/xml-tydom-conduit)
 
